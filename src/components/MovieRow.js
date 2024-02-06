@@ -50,6 +50,7 @@ export default ({ title, items }) => {
             items.results.map((item, key) => (
               <div data-npaw-article onClick={()=>{handleMovieClick(item)}} key={key} className="movieRow--item">
                 <h1 data-npaw-article-title style={{display: "none"}}>{item.original_title ? item.original_title : item.original_name}</h1>
+                <a data-npaw-article-url href={encodeURIComponent(item.original_title ? item.original_title : item.original_name)} style={{display: "none"}}></a>
                 <img
                   data-npaw-article-image
                   src={`https://image.tmdb.org/t/p/w300${item.poster_path}`}

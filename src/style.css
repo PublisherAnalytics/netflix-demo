@@ -45,6 +45,11 @@ footer {
     top: 35%;
     left: 43%;
     cursor: pointer;
+    opacity: 0.3;
+  }
+
+  svg:hover {
+    opacity: 1;
   }
 
   .featured--horizontal {
@@ -53,9 +58,10 @@ footer {
 
   .movie--description {
     margin-top: 15px;
+    padding-right: 30px;
     font-size: 17px;
     color: #999;
-    max-width: 40%;
+    max-width: 800px;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 5; 
