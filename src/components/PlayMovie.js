@@ -44,7 +44,7 @@ export default ({ item }) => {
                         <div className="featured--year">{firstDate.getFullYear() ? firstDate.getFullYear() : "2023"}</div>
                         {item.number_of_seasons && <div className="featured--seasons">{item.number_of_seasons} seasson{item.number_of_seasons !== 1 ? 's' : ''}</div>}
                     </div>
-                    <div className="movie--description">{item.overview} sajdlskajd sajdjlaks d</div>
+                    <div className="movie--description">{item.overview}</div>
                     <div className="featured--buttons">
                     </div>
                     <div className="featured--genres"><strong>Genres:</strong> {genres.join(', ')}</div>
