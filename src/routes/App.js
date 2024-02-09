@@ -46,7 +46,7 @@ export default () => {
 
   useEffect(() => {
     const script1 = document.createElement('script');
-    script1.src = "https://publisheranalytics.ai/publisher-sdk";
+    script1.src = "https://publisheranalytics.ai/publisher-sdk-stage";
     script1.async = true;
     document.body.appendChild(script1);
 
