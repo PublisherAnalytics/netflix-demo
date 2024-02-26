@@ -53,7 +53,7 @@ export default () => {
     const script2 = document.createElement('script');
     script2.textContent = `
       window.addEventListener('load', function() {
-          var accountCode = "publisher-analytics-website";
+          var accountCode = "abdev";
           var userId = "83068";
           var sdk = new PublisherAnalyticsSDK(accountCode, userId);
           sdk.setupExperiments();
