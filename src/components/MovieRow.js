@@ -29,6 +29,11 @@ export default ({ title, items }) => {
     navigate(`/movie/${movieName}`, { state: { movie } });
   }
 
+  const getUrl = (movie) => {
+    let movieName = encodeURIComponent(movie.original_title ? movie.original_title : movie.original_name);
+    return `https://netflix-pa.vercel.app/movie/${movieName}`;
+  }
+
   return (
     <div className="movieRow">
       <h2>{title}</h2>
@@ -50,7 +55,7 @@ export default ({ title, items }) => {
             items.results.map((item, key) => (
               <div data-npaw-article onClick={()=>{handleMovieClick(item)}} key={key} className="movieRow--item">
                 <h1 data-npaw-article-title style={{display: "none"}}>{item.original_title ? item.original_title : item.original_name}</h1>
-                <a data-npaw-article-url href={encodeURIComponent(item.original_title ? item.original_title : item.original_name)} style={{display: "none"}}></a>
+                <a data-npaw-article-url href={getUrl(item)} style={{display: "none"}}></a>
                 <img
                   data-npaw-article-image
                   src={`https://image.tmdb.org/t/p/w300${item.poster_path}`}
