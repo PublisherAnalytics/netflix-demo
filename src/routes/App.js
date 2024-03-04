@@ -73,11 +73,6 @@ export default () => {
       </section>
 
       <footer>
-        <img
-          style={{ width: "80px" }}
-          src={PublisherAnalyticsLogo}
-          alt="Publisher Analytics Logo"
-        />
         <p>
           This is a Demo Page
         </p>
