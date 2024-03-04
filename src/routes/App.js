@@ -79,9 +79,7 @@ export default () => {
           alt="Publisher Analytics Logo"
         />
         <p>
-          This is a{" "}
-          <a href="https://www.publisheranalytics.ai/">Publisher Analytics</a>{" "}
-          Demo Page
+          This is a Demo Page
         </p>
         <p>Rights for Netflix and themoviedb.org</p>
       </footer>
